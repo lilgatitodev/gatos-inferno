@@ -15,7 +15,7 @@ so he decided that there was only one solution to his issue - make his own, and 
 
 
 ## why am i publishing the src
-gatos inferno was my first ever public tool and i will never stop loving it like my own child - its userbase grew a lot and brought me a lot of members and my projects a lot of attention, but theres only so much ideas one gato can have for one bot. so im handing it off to you guys; make forks, improve the code, self host it, skid it do whatever you want to it! also open source is cool and shit
+gatos inferno was my first ever public tool and i will never stop loving it like my own child - its userbase grew a lot and brought me a lot of members and my projects a lot of attention, but theres only so much ideas one gato can have for one bot. so im handing it off to you guys; make forks, improve the code, send pull requests, self host it, skid it do whatever you want to it! also open source is cool and shit
 
 p.s: im not gonna stop hosting it u can still use my bot find the link on my discord server
 

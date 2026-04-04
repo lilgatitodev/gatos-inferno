@@ -25,9 +25,6 @@ im just gonna put a screenshot of the /help here so idk theres that
 
 
 
-<sub>For a video tutorial click [here](https://www.youtube.com/watch?v=qLosIj__H_g)  
-P.S: The video tutorial has some missing commands and please do not follow the first part as the Access System has been removed</sub>  
-
 
 #### COMMAND: /spam {msg} {amount} {delay} {special} {length}
 

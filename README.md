@@ -25,18 +25,6 @@ im just gonna put a screenshot of the /help here so idk theres that
 
 <sub>
 
-# [JOIN OUR SERVER](https://discord.com/invite/ratb8bwstu)
-
-**GATOS INFERNO / HELP**  
-https://discord.com  
-
----
-
-For a video tutorial click [here](https://www.youtube.com/watch?v=qLosIj__H_g)  
-P.S: The video tutorial has some missing commands and please do not follow the first part as the Access System has been removed  
-
----
-
 ## COMMAND: /spam {msg} {amount} {delay} {special} {length}
 
 The main spam command.  
@@ -51,7 +39,6 @@ Choose a special format for the messages, RandomUnicode/LongUnicode/MessageRepea
 - length (**optional**)  
 If a special format is enabled it will set the length for it, for example MessageRepeat will normally do your message 50 times but with this parameter you can edit it.  
 
----
 
 ## COMMAND: /credit {servername} {target}
 
@@ -61,43 +48,36 @@ The name of the server to put in the fake frame message.
 - target  
 The target user to frame for raiding.  
 
----
 
 ## COMMAND: /tsarbomba
 
 Simple and fast unicode flood with no parameters.  
 
----
 
 ## COMMAND: /blankflood
 
 Floods chat with whitespace unicode, makes chat look empty, no parameters.  
 
----
 
 ## COMMAND: /shitspam
 
 Spams shitpost gifs and images, contains NSFW.  
 
----
 
 ## COMMAND: /shitspam-clean
 
 Spams shitpost gifs and images, does NOT contain direct nudity.  
 
----
 
 ## COMMAND: /promospam
 
 Spams our promotional memes and gifs for Gatos Inferno.  
 
----
 
 ## COMMAND: /ipinfo {ip} {ephermal}
 
 Uses an API to find info about an ip including geolocation, internet provider and other shit idk.  
 
----
 
 ## COMMAND: /maskurl {url} {maskurl} {maskurl-method} {ephermal}
 
@@ -109,13 +89,11 @@ The mask you want to use for the URL
 - maskurl-method  
 Method to use for masking (Email doesnt work when sent over discord bc its patched)  
 
----
 
 ## COMMAND: /idlookup {userid} {ephermal}
 
 Retrieves info about a Discord userid  
 
----
 
 ## COMMAND: /webhookspam {webhook-url} {msg} {amount} {name} {pfp-image-link}
 
@@ -131,7 +109,6 @@ Webhook message profile name
 - pfp-image-link  
 Image address to the profile picture of the webhook messages  
 
----
 
 ## COMMAND: /servernuke {bottoken} {serverid} {servername} {channelname} {channelamount} {message} {messageamount} {messageloop} {banall?} {kickall?} {muteall?} {lockdown?}
 
@@ -161,7 +138,6 @@ Wether to attempt muting of all members (1 week)
 - lockdown  
 Wether to lockdown the server (remove Send Messages permission from all roles)  
 
----
 
 ## COMMAND: /threadspam {token} {channelid} {amount} {delay} {message}
 
@@ -177,14 +153,9 @@ Delay between thread creation (1000-any)
 - message  
 What to name the threads  
 
----
 
 ## COMMAND: /promotext {ephemeral}
 
 Command for our partners - send our PromoText  
-
----
-
-**guns.lol/lilgatito**
 
 </sub>

@@ -29,7 +29,7 @@ im just gonna put a screenshot of the /help here so idk theres that
 P.S: The video tutorial has some missing commands and please do not follow the first part as the Access System has been removed</sub>  
 
 
-## COMMAND: /spam {msg} {amount} {delay} {special} {length}
+#### COMMAND: /spam {msg} {amount} {delay} {special} {length}
 
 <sub>The main spam command.</sub>  
 - <sub>msg  
@@ -44,7 +44,7 @@ Choose a special format for the messages, RandomUnicode/LongUnicode/MessageRepea
 If a special format is enabled it will set the length for it, for example MessageRepeat will normally do your message 50 times but with this parameter you can edit it.</sub>  
 
 
-## COMMAND: /credit {servername} {target}
+#### COMMAND: /credit {servername} {target}
 
 <sub>Frame someone for raiding the server.</sub>  
 - <sub>servername  
@@ -53,37 +53,37 @@ The name of the server to put in the fake frame message.</sub>
 The target user to frame for raiding.</sub>  
 
 
-## COMMAND: /tsarbomba
+#### COMMAND: /tsarbomba
 
 <sub>Simple and fast unicode flood with no parameters.</sub>  
 
 
-## COMMAND: /blankflood
+#### COMMAND: /blankflood
 
 <sub>Floods chat with whitespace unicode, makes chat look empty, no parameters.</sub>  
 
 
-## COMMAND: /shitspam
+#### COMMAND: /shitspam
 
 <sub>Spams shitpost gifs and images, contains NSFW.</sub>  
 
 
-## COMMAND: /shitspam-clean
+#### COMMAND: /shitspam-clean
 
 <sub>Spams shitpost gifs and images, does NOT contain direct nudity.</sub>  
 
 
-## COMMAND: /promospam
+#### COMMAND: /promospam
 
 <sub>Spams our promotional memes and gifs for Gatos Inferno.</sub>  
 
 
-## COMMAND: /ipinfo {ip} {ephermal}
+#### COMMAND: /ipinfo {ip} {ephermal}
 
 <sub>Uses an API to find info about an ip including geolocation, internet provider and other shit idk.</sub>  
 
 
-## COMMAND: /maskurl {url} {maskurl} {maskurl-method} {ephermal}
+#### COMMAND: /maskurl {url} {maskurl} {maskurl-method} {ephermal}
 
 <sub>Mask a url as another using a link shortener</sub>  
 - <sub>url  
@@ -94,12 +94,12 @@ The mask you want to use for the URL</sub>
 Method to use for masking (Email doesnt work when sent over discord bc its patched)</sub>  
 
 
-## COMMAND: /idlookup {userid} {ephermal}
+#### COMMAND: /idlookup {userid} {ephermal}
 
 <sub>Retrieves info about a Discord userid</sub>  
 
 
-## COMMAND: /webhookspam {webhook-url} {msg} {amount} {name} {pfp-image-link}
+#### COMMAND: /webhookspam {webhook-url} {msg} {amount} {name} {pfp-image-link}
 
 <sub>Mask a url as another using a link shortener</sub>  
 - <sub>webhook-url  
@@ -114,7 +114,7 @@ Webhook message profile name</sub>
 Image address to the profile picture of the webhook messages</sub>  
 
 
-## COMMAND: /servernuke {bottoken} {serverid} {servername} {channelname} {channelamount} {message} {messageamount} {messageloop} {banall?} {kickall?} {muteall?} {lockdown?}
+#### COMMAND: /servernuke {bottoken} {serverid} {servername} {channelname} {channelamount} {message} {messageamount} {messageloop} {banall?} {kickall?} {muteall?} {lockdown?}
 
 <sub>Nuke a server with NO downloads and easy setup, even on mobile - [Video Tutorial](https://www.youtube.com/watch?v=o-a-3BYZfDE)</sub>  
 - <sub>bottoken  
@@ -143,7 +143,7 @@ Wether to attempt muting of all members (1 week)</sub>
 Wether to lockdown the server (remove Send Messages permission from all roles)</sub>  
 
 
-## COMMAND: /threadspam {token} {channelid} {amount} {delay} {message}
+#### COMMAND: /threadspam {token} {channelid} {amount} {delay} {message}
 
 <sub>Use a selfbot to spam threads in channels [DISCLAIMER: Use an alt or you might get banned]</sub>  
 - <sub>token  
@@ -158,6 +158,6 @@ Delay between thread creation (1000-any)</sub>
 What to name the threads</sub>  
 
 
-## COMMAND: /promotext {ephemeral}
+#### COMMAND: /promotext {ephemeral}
 
 <sub>Command for our partners - send our PromoText</sub>  

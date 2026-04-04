@@ -22,7 +22,7 @@ p.s: im not gonna stop hosting it tho u can still use my bot find the link on my
 im just gonna put a screenshot of the /help here so idk theres that
 (i gave chatgpt the embed json and asked it to make a .md equivilent)
 
-
+<small>
 ## COMMAND: /spam {msg} {amount} {delay} {special} {length}
 
 The main spam command.  
@@ -168,3 +168,5 @@ What to name the threads
 ## COMMAND: /promotext {ephemeral}
 
 Command for our partners - send our PromoText  
+
+</small>

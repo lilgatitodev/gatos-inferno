@@ -29,8 +29,11 @@ const CLIENT_ID = process.env.CLIENT_ID;
 const ComponentType = { ACTION_ROW: 1, BUTTON: 2 };
 const ButtonStyle = { PRIMARY: 1 };
 
+const rateLimits = new Map();
+const RATE_LIMIT_MS = 1000;
+
 const owners = new Set(["1279134507915542568","1232103434757345332","1363567101146562600","1435706030796570625","1441847641922207985"]); const blacklist = new Set(["1451315029071892490","1445156486333595749","799349584476373103","1330955394419396619","1370338490549534760","1406659453604069406","627561510574620672",
-"1333804800613154830",
+"1333804800613154830","1492866495867261109",
 /*spamming ppl up here*/
 
 
@@ -74,6 +77,19 @@ app.post("/interactions", verifyKeyMiddleware(PUBLIC_KEY), async (req, res) => {
   const interaction = req.body;
   const userId = interaction.member?.user?.id || interaction.user?.id;
   const guildId = interaction.guild_id || "UNKNOWN";
+
+  // rate limit
+  if (interaction.type === InteractionType.APPLICATION_COMMAND || interaction.type === InteractionType.MESSAGE_COMPONENT) {
+    const now = Date.now();
+    const last = rateLimits.get(userId) || 0;
+    if (now - last < RATE_LIMIT_MS) {
+      return res.json({
+        type: InteractionResponseType.CHANNEL_MESSAGE_WITH_SOURCE,
+        data: { content: "slow down", flags: 64 },
+      });
+    }
+    rateLimits.set(userId, now);
+  }
 
 
 
@@ -180,7 +196,7 @@ if (
         `https://discord.com/api/v10/webhooks/${CLIENT_ID}/${interaction.token}`,
         {
           content: promoText,
-          flags: (ephemeral ? 64 : 0) | (1 << 2),/public AND suppress embeds
+          flags: (ephemeral ? 64 : 0) | (1 << 2),
         }
       );
     } catch (e) {

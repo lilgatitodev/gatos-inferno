@@ -26,16 +26,6 @@ const dmCapable = (cmd) =>
 const commands = [
   dmCapable(
     new SlashCommandBuilder()
-      .setName('dc-bypass')
-      .setDescription('this command is in testing DO NOT USE')
-      .addStringOption(opt =>
-        opt.setName('url')
-          .setDescription('this command is in testing DO NOT USE')
-          .setRequired(true))
-  ),
-
-  dmCapable(
-    new SlashCommandBuilder()
       .setName('credit')
       .setDescription('Frame a user for raiding the server')
       .addStringOption(opt =>

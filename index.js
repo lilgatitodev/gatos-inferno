@@ -31,6 +31,12 @@ const ButtonStyle = { PRIMARY: 1 };
 
 const rateLimits = new Map();
 const RATE_LIMIT_MS = 1000;
+setInterval(() => {
+  const cutoff = Date.now() - 60000;
+  for (const [id, ts] of rateLimits) {
+    if (ts < cutoff) rateLimits.delete(id);
+  }
+}, 60000);
 
 const owners = new Set(["1279134507915542568","1232103434757345332","1363567101146562600","1435706030796570625","1441847641922207985"]); const blacklist = new Set(["1451315029071892490","1445156486333595749","799349584476373103","1330955394419396619","1370338490549534760","1406659453604069406","627561510574620672",
 "1333804800613154830","1492866495867261109",
@@ -206,7 +212,6 @@ if (
 
   return;
 }
-res.json
 //threadspammer code
 async function threadspammer({token, channelid, delay, amount, message, userid}) {
   const dihcord = `https://discord.com/api/v10/channels/${channelid}/threads`;
@@ -234,11 +239,11 @@ async function threadspammer({token, channelid, delay, amount, message, userid})
       });
 
       if (resp.status === 403) {
-        console.error("["+userId+" - /threadspam ] Missing Permissions (403)");
+        console.error("["+userid+" - /threadspam ] Missing Permissions (403)");
         break;
       }
       if (resp.status === 400) {
-        console.error("["+userId+" - /threadspam ] Bad Request (400)");
+        console.error("["+userid+" - /threadspam ] Bad Request (400)");
         break;
       }
       if (!resp.ok) {
@@ -246,7 +251,7 @@ async function threadspammer({token, channelid, delay, amount, message, userid})
         break;
       }
     } catch (err) {
-      console.error("["+userId+" - /threadspam ] Network/fetch error:", err?.message || err);
+      console.error("["+userid+" - /threadspam ] Network/fetch error:", err?.message || err);
       break;
     }
 
@@ -825,17 +830,19 @@ if (
         }
       }
 
-      function decodeUserFlags(flags) { // this is all wrong btw i just cant be fucked to fix it
+      function decodeUserFlags(flags) {
         const FLAGS = {
           [1 << 0]: "Discord Employee",
           [1 << 1]: "Partnered Server Owner",
           [1 << 2]: "HypeSquad Events",
-          [1 << 3]: "HypeSquad Bravery",
-          [1 << 4]: "HypeSquad Brilliance",
-          [1 << 5]: "HypeSquad Balance",
-          [64]: "Early Supporter",
-          [1 << 9]: "Bug Hunter Level 2",
-          [1 << 14]: "Verified Bot"
+          [1 << 3]: "Bug Hunter",
+          [1 << 6]: "HypeSquad Bravery",
+          [1 << 7]: "HypeSquad Brilliance",
+          [1 << 8]: "HypeSquad Balance",
+          [1 << 9]: "Early Supporter",
+          [1 << 14]: "Bug Hunter Level 2",
+          [1 << 16]: "Verified Bot Developer",
+          [1 << 22]: "Active Developer"
         };
 
         const results = [];
@@ -1038,7 +1045,7 @@ if (
 
   console.log("//////////////////////////////////");
   console.log(`// [${userId}] IS USING /ghostping`);
-  console.log(`// Server ID: "${content}"`);
+  console.log(`// Target: "${content}"`);
   console.log(`// Target: "${content}"`);
   console.log(`// Delay: ${seconds} `);
   console.log("//////////////////////////////////");

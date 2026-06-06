@@ -3,6 +3,9 @@
 ## DISCLAIMER:
 if you plan on reading or editing the code good luck it genuinley is bad like thats all i can say
 
+## usage tutorial
+will make youtube video later
+
 ## the story
 one fateful day, gato wanted to raid people with no admin so he set out to find bots to do that
 

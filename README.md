@@ -4,7 +4,7 @@
 if you plan on reading or editing the code good luck it genuinley is bad like thats all i can say
 
 ## setup 
-[video tut](https://jumpshare.com/s/8egtXJOMADc35eHI6aAs)
+[video tut](https://files.catbox.moe/2w3atn.mp4)
 
 ## the story
 one fateful day, gato wanted to raid people with no admin so he set out to find bots to do that
